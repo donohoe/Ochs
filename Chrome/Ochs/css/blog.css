@@ -1,0 +1,18 @@
+
+#blog-index {
+	display: none;
+}
+
+/* Show COmments */
+
+div.entry-meta ul.entry-tools li.comment-link,
+div.entry-meta ul.entry-tools li.comment-link a {
+	display: block !important;
+}
+
+/* Well Blog */
+
+.socialMediaModule,
+#tag-list {
+	display: none;
+}

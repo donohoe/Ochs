@@ -1,0 +1,161 @@
+<html>
+<head>
+	<title>Ochs</title>
+    <style type="text/css">
+	body {
+		margin: 5px;
+		padding: 5px;
+	}
+
+	body, table {
+		font-family: Helvetica, Arial;
+		font-size: 12px;
+	}
+
+    .formLayout {
+        background-color: #f3f3f3;
+        border: solid 1px #a1a1a1;
+        padding:   10px;
+        min-width: 400px;
+    }
+
+    .formLayout label,
+    .formLayout input {
+        display:   block;
+        min-width: 140px;
+        float:     left;
+        margin-bottom: 10px;
+		vertical-align: top;
+    }
+ 
+    .formLayout select,
+    .formLayout input {
+        margin: 0;
+    }
+
+    .formLayout label {
+        display:   block;
+		vertical-align: top;
+        text-align:    right;
+        padding-right: 20px;
+		line-height: 1.6em;
+    }
+    
+    .formLayout label,
+    .formLayout select,
+    .formLayout input {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	
+	#subscribe {
+		max-width: 248px;
+		text-align: justify;
+		padding: 0px 0 1px 0;
+	}
+
+	button {
+		margin-left: 160px;
+		padding: 4px 32px 5px 32px;
+	}
+
+    br  {
+        clear: left;
+    }
+
+	table {
+		display: inlinel;
+		border-collapse: colapse;
+	}
+    </style>	
+</head>
+<script type="text/javascript">
+
+	var Ochs = Ochs || {};
+	Ochs.Storage = Ochs.Storage || [];
+
+	function restoreOptions() {
+		var config = document.getElementsByClassName("config");
+		var len    = config.length;
+
+		for (var i=0; i<len; i++) {
+			var item = config[i];
+			if (localStorage[item.id]) {
+				item.value = localStorage[item.id];
+				
+				Ochs.Storage[item.id] = localStorage[item.id];
+				
+				console.log('Restoring', item.id, item.value);
+			}
+		}
+	}
+
+	function saveOptions() {
+		var config = document.getElementsByClassName("config");
+		var len    = config.length;
+
+		for (var i=0; i<len; i++) {
+			var item = config[i];
+
+			if (item.id=="weather" && item.value==1) {
+				console.log("Lets get weather");
+				updateLocation();
+			}
+
+			Ochs.Storage[item.id] = item.value;
+			localStorage[item.id] = item.value;
+
+			console.log('Saving', item.id, item.value);
+		}
+	}
+
+	function updateLocation() {
+		console.log("Trying geo...");
+	    if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+
+				function successCallback(position) {
+					console.log("Geo success", position);
+					localStorage["location_timestamp"] = position.timestamp;
+					localStorage["location_latitude"]  = position.coords.latitude;
+					localStorage["location_longitude"] = position.coords.longitude;
+				}, 
+		
+				function errorCallback(error) {
+			        switch(error.code) {
+		                case error.TIMEOUT:
+	                        console.log("ERROR: " + error.message);
+	                        break;
+		                default:
+	                        console.log("ERROR: " + error.message);
+			        };
+				}
+			);
+	    }
+	}
+</script>
+<body onload="restoreOptions()">
+	<div class="formLayout">
+		<table>
+			<tr>
+				<td>
+				    <label>Typekit Fonts</label>
+				    <select class="config" id="fonts">
+				        <option value="1">On</option>
+				        <option value="0">Off</option>
+				    </select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+			    	<label>Like this? Tell a friend</label>
+					<div id="fb-root"></div>
+					<script src="http://connect.facebook.net/en_US/all.js#appId=215851168469971&amp;xfbml=1"></script>
+					<fb:like href="https://chrome.google.com/webstore/detail/lejiflopkadmkjajbalpkglfhmkjchol" send="true" layout="button_count" width="150" show_faces="false" font=""></fb:like>
+				</td>
+			</tr>
+		<table>
+		<button onclick="saveOptions()">Save</button>
+	</div>
+</body>
+</html>

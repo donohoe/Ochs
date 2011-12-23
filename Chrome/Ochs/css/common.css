@@ -1,0 +1,654 @@
+
+/* Exception for LedePhoto Gallery - Slideshow relies on CSS width for distance to move slides when navigating */
+
+#ledePhoto .ledePhoto {
+	width: 603px !important;
+}
+
+/* End Exceptions */
+
+/* Hide all Immediate DIVs from Body other than #shell (ads) */
+
+body {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	font-size: 68.5% !important;
+}
+
+body > div {
+  display: none !important;
+}
+
+/* Links */
+
+a:hover {
+	text-decoration: none !important;
+/*	color:          black !important;*/
+	color:        #A81817 !important;
+}
+
+/* END Links */
+
+/*	Start Fonts */
+
+.byline, .dateline, .timestamp {
+	font-family: helvetica, arial, sans-serif !important;
+}
+
+/*	End Fonts */
+
+#upNextWrapper {
+  display: block !important;
+}
+
+#shell {
+  display: block !important;
+  border: 0 !important;
+}
+
+#page {
+  border: 0 !important;
+}
+
+/* Masthead */
+
+#masthead {
+  border-top: 0 !important;
+}
+
+#NYTLogo {
+  padding-top: 8px !important;
+}
+
+
+
+
+#shell #page #masthead.clearfix  {
+  height: 51px !important; /* Articles (I hope) */)
+}
+
+
+#shell #page #masthead #date {
+  position: absolute;
+  top:  83px;
+  left: 50%;
+  margin-left: -190px;
+}
+
+#shell #page #masthead.clearfix #date {
+  display: none !important; /* Hide date on SF's */
+}
+
+#masthead h2 {
+  margin-top:  0     !important;
+  margin-left: 234px !important;
+  top: 5px !important;
+  width: 465px !important;
+  position: relative !important;
+  text-align: center !important;
+  font-family: arial, helvetica, sans-serif !important;
+  font-size: 2.9em !important;
+  line-height: 1.1032em !important;
+
+}
+
+/* NYT Masthead Logo in top-left */
+
+#branding {
+	float: left;
+}
+
+
+
+
+/* MODULES */
+
+/* Classified Widget */
+
+#classifiedsWidget {
+  display: none;
+}
+
+/* Homepage C Column Blog Module */
+
+#blogModule .tabContent {
+  border: 1px solid #CCC !important;
+}
+
+#blogModule .tabbedBlogModule .tabContent ul {
+  padding-left: 0 !important;
+}
+
+#blogModule .tabContent ul li {
+  background: none !important;
+  padding: 7px 0 0 0 !important;
+}
+
+#blogModule p.refer {
+  padding-left: 5px   !important;
+  padding-bottom: 3px !important;
+  margin-left: 0px !important;
+}
+
+/* COMMENTS */
+
+#readerscomment { /* Article Inline comment box */
+  display: none !important;
+}
+
+a.post-comment,
+a.comments {
+	display: none !important;
+}
+
+/* Kill Comment Refers */
+
+span.commentCountLink,
+ul a[href*="postComment"],
+ul a[href*="community.nytimes.com"],
+ul a[alt="Comment"],
+ul img[alt="Comment"],
+ul img[alt="Comments"],
+ul img[alt="comment icon"],
+ul span.commentCountLink { 
+  display: none !important;
+}
+
+/* Search & Toolbar */
+
+#toolbar {
+  padding-right: 0px !important;
+  height: 33px !important;
+}
+
+#toolsHome {
+  display: none !important;
+}
+
+
+.socialMediaModule {
+	margin-right: 0 !important;
+	width: 200px; !important;
+}
+
+.socialMediaModule p.listLabel,
+.socialMediaModule span.pipe,
+.socialMediaModule ul {
+  display: none !important;
+}
+
+
+.socialMediaModule span {
+	font-family: Helvetica, Arial;
+	font-size: 12px;
+	color: black;
+	vertical-align: text-bottom;
+	margin-left: 10px;
+	display: block !important;
+	float: right;
+}
+
+/* Just Hide */
+
+#memberTools,
+#shell > div.tabsContainer {
+  display: none !important;
+}
+
+/* Search Bar */
+
+#toolbarSearch,
+#toolbarSearchContainer,
+.toolbarSearchContainer-withad, 
+.toolbarSearchContainer-withad #toolbarSearch {
+  width: 320px !important;
+}
+
+#toolbarSearch{
+  overflow: hidden;
+  background: transparent !important;
+}
+
+.toolbarSearchActive {
+  margin: none !important;
+  padding: none !important;
+  height: auto !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+#hpSearchQuery {
+  margin-left: 5px !important;
+}
+
+#toolbarSearch .inlineSearchControl .text {
+  width: 251px !important;
+}
+
+/* Regular Article Specific */
+
+.articleBody {
+	margin-right: 10px !important;
+}
+
+#articleExtras,
+.articleBottomExtra {
+  display: none !important;
+}
+
+
+
+
+/* Inside NYTimes Bar */
+
+#insideNYTimesHeader {
+	border-bottom: 0 !important;
+	padding: 0       !important;
+}
+
+#insideNYTimesHeader h4 {
+	display: none !important;
+}
+
+#insideNYTimesScrollWrapper {
+	width: 977px !important;
+}
+
+#insideNYTimes .navigation {
+	top: 8px   !important;
+	right: 1px !important;
+}
+
+#insideNYTimes #insideNYTimesBrowser td {
+  border-left: 1px solid white !important;
+}
+
+#insideNYTimes #insideNYTimesBrowser .story {
+  width:  185px !important;
+}
+
+#insideNYTimes #insideNYTimesBrowser .story img {
+  width:  185px !important;
+  height: 185px !important;
+}
+
+
+/* Extra Hover effects */
+
+#insideNYTimes .navigation {
+	opacity: 0.3 !important;	
+	-webkit-transition: opacity 500ms linear;
+}
+
+#insideNYTimes:hover .navigation {
+  opacity: 1 !important;
+}
+
+
+/* Moving MOTH */
+
+#recommendedFooter {
+  display: none !important;
+}
+
+/* TimesWire Homepage Module */
+
+div.timeswireModule + div.singleRuleDivider {
+  display: none;
+}
+
+/* Wayward lines that need removal */
+
+div.cColumn .columnGroup.fullWidth div.singleRuleDivider {
+ display: none !important;
+}
+
+#main > div.baseLayout {
+  padding-bottom: 3px;
+}
+
+
+/* Navigation Bar */
+
+#navWorld { width:    74px !important; }
+#navUs  { width:      52px !important; }
+#navNyregion { width: 105px !important; }
+#navBusiness { width: 87px !important; }
+#navTechnology  { width: 112px !important; }
+#navScience { width: 81px !important; }
+#navHealth  { width: 79px !important; }
+#navSports  { width: 76px !important; }
+#navOpinion { width: 83px !important; }
+#navArts { width:    64px !important; }
+#navStyle { width:   68px !important; }
+#navTravel {
+  width: 77px !important;
+  border-width: 0 0 1px 1px !important;
+}
+
+#navJobs,
+#navRealestate,
+#suppressedTechProducts,
+#navAutos, /* old id circa 2009 */
+div.navigation div.sn-media #businessSearchBar,
+#navAutomobiles { 
+  display: none !important;
+}
+
+/* Sub Nav */
+
+li#subNav_sportstickets {
+  display: none !important; /* Sports */
+}
+
+.navigation .subNavigation li, .navigation ul.tabs li.selected ul li {
+  padding: 0 13px !important;
+}
+
+
+/* FOOTER */
+
+#footer {
+  margin-top: 30px !important;
+}
+
+#footer ul li {
+  font-size: 1em !important;
+}
+
+
+#footer ul li a.rssButton {
+  background: none !important;
+  padding: 0 !important;
+}
+
+
+/* Hide text label for Masthead Search whevere it may be (Blogs, Opinion so far) */
+
+#searchWidget .inlineSearchControl label[for="searchQuery"] {
+	color: white !important;
+	font-size: 10px !important;
+	height: 10px !important;
+}
+
+
+
+/* Custum Navigation Bar */
+
+#ochsHPNavBar {
+	margin-bottom: 10px;
+	height: 20px;
+	opacity: 0.3;
+	-webkit-transition: opacity 500ms linear;
+}
+
+#ochsHPNavBar:hover {
+	opacity: 1;
+}
+
+#ochsHPNavBar #navWorld       { width: 56px  !important; }
+#ochsHPNavBar #navUs          { width: 40px  !important; }
+#ochsHPNavBar #navNyregion    { width: 89px  !important; }
+#ochsHPNavBar #navBusiness    { width: 71px  !important; }
+#ochsHPNavBar #navTechnology  { width: 95px  !important; }
+#ochsHPNavBar #navScience     { width: 67px  !important; }
+#ochsHPNavBar #navHealth      { width: 61px  !important; }
+#ochsHPNavBar #navSports      { width: 57px  !important; }
+#ochsHPNavBar #navOpinion     { width: 65px  !important; }
+#ochsHPNavBar #navArts        { width: 46px  !important; }
+#ochsHPNavBar #navStyle       { width: 48px  !important; }
+#ochsHPNavBar #navTravel      { 
+	width: 60px  !important;
+	border-width: 0 1px 1px 0 !important;
+}
+
+#ochsHPNavBar #navMore {
+	width: 12px  !important; 
+	float: right;
+	border-left-width: 1px !important;
+	cursor: pointer;
+}
+
+#ochsHPNavBar ul li:last-child {
+	border-right-width: 0 !important;
+}
+
+
+/* Main SubNav */
+
+#page > #navigation,
+#page > div.navigation,
+#page > div.subNavigation {
+	display: none;
+}
+
+#ochsHPNavBar ul.tabs {
+	position: absolute;
+	z-index:  8888800;
+	height:   55px;
+}
+
+#ochsHPNavBar ul.tabs li {
+	background-color:  #fff !important;
+	text-align: center      !important;
+	border-top: 0           !important;
+
+	position:    initial;
+	z-index:     8888800;
+	padding:     6px 0 3px 0    !important;
+	font-family: georgia, "times new roman", times, serif;
+	font-size:   12px;
+	line-height: 15px;
+}
+
+#ochsHPNavBar ul.tabs > li:first-child {
+	border-left-width: 1px;
+}
+
+#ochsHPNavBar ul.tabs > li {
+	float: left;
+}
+
+
+#ochsHPNavBar ul.tabs li div {
+	-webkit-box-shadow: 0 1px 2px #333;
+	-webkit-transition: opacity 500ms ease-in-out;
+
+	visibility:  hidden;
+	opacity:     0.1;
+
+	position:    absolute;
+
+	width: 968px;
+	left: 0;
+
+	height:      24px;
+	z-index:     8888801;
+
+	margin-top:  4px;
+
+	border-bottom: 1px solid #ccc;
+	border-left:   1px solid #ccc;
+	border-right:  1px solid #ccc;
+	background-color: #F4F4F4;
+}
+
+#ochsHPNavBar ul.tabs li ul li {
+	background-color: #F4F4F4 !important;
+	padding    :      6px 12px 2px 12px !important;
+	border:           0;
+}
+
+#ochsHPNavBar ul li:hover {
+	background-color: #F4F4F4 !important;
+}
+
+#ochsHPNavBar ul li.hasSubNav:hover {
+	border-bottom:  1px solid #F4F4F4 !important;
+}
+
+#ochsHPNavBar ul li:hover div {
+	visibility: visible;
+	opacity: 1;
+}
+
+#ochsHPNavBar ul.tabs li div ul {
+	float: left;
+	background-color: #F4F4F4 !important;
+}
+
+#ochsHPNavBar ul.tabs li div.keepRight ul {
+	float: right;
+}
+
+#ochsHPNavBar ul.tabs li div.keepCenter ul {
+	margin-left:  auto;
+	margin-right: auto;
+	position: absolute;
+}
+
+#ochsBtnMenu {
+ 	-webkit-transition: opacity 500ms linear;
+	padding:       7px !important;
+	border-right-width: 1px !important;;
+	opacity:       1;
+
+	position: absolute !important;
+	right:    0;
+}
+
+#ochsBtnMenu:hover {
+	opacity: 1;
+}
+
+#ochsSiteList {
+	position: absolute;
+	padding:  10px 0 10px 10px !important;
+	width:    960px;
+	z-index:  99999999900;
+	display:  none;
+	background-color: white;
+	list-style:       none;
+	list-style-type:  none;
+	
+	margin-top:       24px;
+	border:           1px solid #CCC;
+}
+
+#ochsSiteList.isOpen {
+	display: block;
+}
+
+
+#ochsSiteList li {
+	padding:     0;
+	width:       135px;
+	float:       left;
+	background:  none;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:   13px;
+}
+
+#ochsSiteList li span {
+	display: block;
+	float: left;
+	margin: 2px 6px 3px 3px;
+	width:  10px;
+	height: 10px;
+	opacity: 0.1;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+}
+
+#ochsSiteList li span:hover  {
+	opacity:    0.5;
+	background: #A81817;
+}
+
+#ochsSiteList li span.isSelected  {
+	background: darkBlue;
+}
+
+#ochsSiteList li span,
+#ochsSiteList li.selected span  {
+	background: #ccc;
+}
+
+/* END Custum Navigation Bar */
+
+
+/* Custum Overlay */
+
+a[name="top"] {
+
+	display: block;
+	width:   100%;
+	height:  100%;
+	overflow: hidden;
+
+	border:  0;
+	padding: 0;
+	margin:  0;
+	
+	position: fixed;
+	top:     0;
+	left:    0;
+	background-color: white;
+	z-index: 999999990;
+}
+
+#ochsOverlay,
+#ochsOverlayTop,
+#ochsOverlayContent {
+	overflow: hidden;
+	position: fixed;
+	display: block;
+	width:   100%;
+	height:  100%;
+	border:  0;
+	padding: 0;
+	margin:  0;
+	top:     0;
+	left:    0;
+	z-index: 999999990;
+}
+
+#ochsOverlayTop {
+	top:     0px;
+	height:  74px;
+	background-color: white;
+}
+
+#ochsOverlaySearch {
+	top: 0;
+	height: 40px;
+	margin-top: 74px;
+	background-color: white;
+}
+
+#ochsOverlay span {
+	width: 987px;
+	margin: 0 auto;
+	display: block;
+	height: 100%;
+	top: 0;
+	border: 0;
+	position: static;
+}
+
+#ochsOverlayContentAB {
+	position: relative;
+	float: left;
+	width:  623px;
+	height: 100%;
+	background-color: white;
+}
+
+#ochsOverlayContentC {
+	position: relative;
+	width: 364px;
+	height: 100%;
+	float: right;
+	background-color: white;
+}
+

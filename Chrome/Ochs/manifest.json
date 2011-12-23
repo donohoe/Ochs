@@ -1,0 +1,107 @@
+{
+  "name":        "Ochs",
+  "version":     "0.1.5.5",
+  "description": "Ochs provides a step-back, focusing on a cleaner layout, single-page, less-is-more approach for The New York Times web site.",
+
+  "icons": {
+	  "128":     "img/icon_128.png"
+  },
+
+  "options_page":    "html/options.html",
+  "background_page": "html/background.html",
+
+  "permissions":     [ "http://*.nytimes.com/*" ],
+
+  "content_scripts": [
+    {
+      "matches":         [ "http://www.nytimes.com/", "http://www.nytimes.com/?*", "http://www.nytimes.com/index.html" , "http://www.nytimes.com/indexes/*", 
+                           "http://*.nytimes.com/pages/*",
+                           "http://*.nytimes.com/20*/*/*", 
+                           "http://*.blogs.nytimes.com/*",
+						   "http://*.nytimes.com/slideshow/*"
+                         ],
+	  "exclude_matches": [ "http://bits.blogs.nytimes.com/*" ],
+      "css":             [ "css/common.css", "css/ads.css" ],
+      "js":              [ "js/lib/jquery-1.6.2.min.js", "js/init.js" ],
+      "run_at":          "document_start",
+	  "all_frames":	     false
+    },
+    {
+      "matches":         [ "http://www.nytimes.com/", "http://www.nytimes.com/index.html" , "http://www.nytimes.com/indexes/*", 
+                           "http://*.nytimes.com/pages/*",
+                           "http://*.nytimes.com/20*/*/*", 
+                           "http://*.blogs.nytimes.com/*",
+                           "http://*.nytimes.com/slideshow/*"
+                         ],
+	  "exclude_matches": [ "http://bits.blogs.nytimes.com/*" ],
+      "js":              [  "js/common.js" ],
+      "run_at":          "document_end",
+	  "all_frames":	     false
+    },
+ 	{
+      "matches":         [ "http://www.nytimes.com/", "http://www.nytimes.com/index.html" , "http://www.nytimes.com/indexes/*" ],
+	  "exclude_matches": [ "http://developer.nytimes.com/*", "http://www.nytimes.com/interactive/*" ],
+      "css":             [ "css/homepage.css" ],
+      "run_at":          "document_start",
+	  "all_frames":	     false
+    },
+    {
+      "matches":         [ "http://*.nytimes.com/pages/*" ],
+      "css":             [ "css/section.css" ],
+      "run_at":          "document_start",
+	  "all_frames":	     false
+    },
+    {
+      "matches":         [ "http://*.nytimes.com/20*/*/*" ],	
+      "exclude_matches": [ "http://bits.blogs.nytimes.com/*" ],
+      "css":             [ "css/article.css" ],
+      "run_at":          "document_start",
+	  "all_frames":	     false
+    },
+    {
+      "matches":         [ "http://*.blogs.nytimes.com/*" ],	
+	  "exclude_matches": [ "http://bits.blogs.nytimes.com/*" ],
+      "css":             [ "css/blog.css" ],
+      "run_at":          "document_start",
+	  "all_frames":	     false
+    },
+    {
+      "matches":         [ "http://*.nytimes.com/slideshow/*" ],
+      "css":             [ "css/slideshow.css" ],
+      "run_at":          "document_start",
+	  "all_frames":	     false
+    },
+	{
+      "matches":         [ "http://www.nytimes.com/", "http://www.nytimes.com/index.html" , "http://www.nytimes.com/indexes/*" ],
+	  "exclude_matches": [ "http://developer.nytimes.com/*", "http://www.nytimes.com/interactive/*" ],
+      "js":              [ "js/homepage.js" ],
+      "run_at":          "document_end",
+	  "all_frames":	     false
+    },
+    {
+      "matches":         [ "http://*.nytimes.com/pages/*" ],
+      "js":              [ "js/section.js" ],
+      "run_at":          "document_end",
+	  "all_frames":	     false
+    },
+    {
+      "matches":         [ "http://*.nytimes.com/20*/*/*" ],
+      "js":              [ "js/article.js" ],
+      "run_at":          "document_end",
+	  "all_frames":	     false
+    },
+    {
+      "matches":         [ "http://*.blogs.nytimes.com/*" ],	
+      "exclude_matches": [ "http://bits.blogs.nytimes.com/*" ],
+      "js":              [ "js/blog.js" ],
+      "run_at":          "document_end",
+	  "all_frames":	     false
+    },
+    {
+      "matches":         [ "http://*.nytimes.com/slideshow/*" ],
+      "css":             [ "js/slideshow.js" ],
+      "run_at":          "document_end",
+	  "all_frames":	     false
+    }
+  ]
+}

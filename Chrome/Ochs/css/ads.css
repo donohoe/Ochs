@@ -1,0 +1,55 @@
+
+/* Ads */
+
+.bigAdContainer,
+.advertisement,
+.ad,
+.bigAd,
+.singleAd, 
+.adHeader,
+.centeredAd,
+.cColumn-TextAdsBox,
+#adxSponLink,
+#adxSponLinkA,
+#HPSiteSearch,
+#TopAd,
+#Box2,
+#Right1,
+#Right2,
+#Right3,
+#Left1,
+#Left2,
+#Left3,
+#Middle1,
+#Middle2,
+#Middle3,
+#Middle4,
+#Middle1C,
+#google_ads_aCol,
+#google_ads,
+div.singleAd + div.singleRuleDivider {
+  display: none !important;
+}
+
+
+/* 
+HP, C Col, Above MOTH 
+*/
+#Middle5 {
+	border-top: 1px lightgray solid;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	opacity: 0.3        !important;
+	-webkit-transition: opacity 500ms linear !important;;
+}
+
+#Middle5:hover {
+	opacity: 1          !important;
+}
+
+/*
+HP, was C Column, moving to Section Grid list
+*/
+#Box1 {
+	display: block !important;
+}

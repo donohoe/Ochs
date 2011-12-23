@@ -1,0 +1,292 @@
+/* START Fonts & Tyekit Fonts */
+
+h1.articleHeadline
+{
+	display:     inline !important;
+	font-family: 'nyt-cheltenham-hinted-1','georgia',serif !important;
+	font-weight: normal !important;
+	opacity:     0;
+}
+
+h1.articleHeadline {
+	font-size: 26px     !important;
+}
+
+.articleSpanImage {
+	margin-top:  14px    !important;
+}
+
+#mostPopWidget h4 a {
+	font-size:   14px   !important;
+}
+
+.isReady h1.articleHeadline
+{
+	visibility: visible !important;
+	opacity:    1       !important;
+}
+
+/* END Fonts */
+
+/* START Masthead */
+
+#masthead {
+	padding: 7px 0 0 !important;
+}
+
+#masthead h2.pageHeaderWithLabel span {
+	display: none !important;
+}
+
+#branding {
+	float: left !important;
+}
+
+#searchWidget {
+	margin: 0 0 0 0 !important; /* had right at 7 px? */
+}
+
+
+/* END Masthead */
+
+#article {
+	margin-top: 10px !important;
+}
+
+.articleBody p {
+	font-size: 15px  !important;
+}
+
+/* Article WideAd that narrows AB column */
+
+#XXL {
+  display: none !important;
+}
+
+.wideAd .abColumn {
+  width: 617px !important;
+}
+
+/* Reinforce for Opinion */
+
+#main .spanAB {
+	background: url(/images/layout/vertical_rule.gif) repeat-y 617px !important;
+}
+
+/* Article Recommendations */
+
+#recommendedHeader .element1 {
+  width: 144px !important; /* account for larger font size */
+}
+
+/* Move Recoomedned Module up on Article page but not HP */
+
+#mostPopWidget{
+  margin-top: -27px !important;
+}
+
+#mostPopWidget ul.tabs li.selected {
+  background-color: white !important;
+}
+
+#cColumnTopSpanRegion #mostPopWidget{
+  margin-top: 0px       !important;
+	height:   315px     !important;
+	overflow: hidden    !important;
+}
+
+/* END */
+
+/* Hide Facebook Module on Article pages but not Homepage */
+
+#facebookContainer {
+  display: none !important;
+}
+
+.spanABBelowFold #facebookContainer,
+#cColumnTopSpanRegion #facebookContainer {
+  display: block !important;
+}
+
+/* No need for right padding on Article C Column */
+
+.cColumn div.columnGroup {
+	margin-right: 0 !important;
+}
+
+/* Article Tools */
+
+/* - Move to bottom of page */
+
+#article {
+  position: relative;
+  padding-bottom: 85px;
+  margin-bottom:  10px;
+}
+
+#articleToolsTop {
+  position: absolute  !important;
+  bottom: 0           !important;
+  margin: 0 0 0 -5px  !important;
+  width: 598px !important;
+}
+
+.articleTools .box {
+  border: 0 !important;
+  margin: 0 !important;
+}
+
+ul.toolsList {
+  margin: 9px 12px 7px 3px !important;
+  float: right             !important;
+  padding-top: 16px        !important;
+}
+
+ul.toolsList li {
+  float: left !important;
+  margin-bottom: 0 !important;
+  border-bottom: 0 !important;
+  padding: 5px 17px 2px 0 !important;
+}
+
+
+div.articleToolsSponsor {
+	float:   left  !important;
+	display: block !important;
+}
+
+#articleToolsTop div.articleToolsSponsor {
+	opacity: 0.3        !important;
+	-webkit-transition: opacity 500ms linear;
+}
+
+#articleToolsTop:hover div.articleToolsSponsor {
+	opacity: 1          !important;
+}
+
+
+
+#articleToolsTop li.comments,
+li#shareMenu,
+li.print,
+li.reprints {
+  display: none !important;
+}
+
+.toolsList li:last-child,
+.toolsList li.print {
+  margin-bottom: 0 !important;
+  border-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#article .singleRuleDivider {
+  display: none !important;
+}
+
+/* General C Column */
+
+#main .cColumn {
+	background-color: white !important;
+}
+
+/* Article Inline */
+
+/*.articleInline  > div.doubleRule,*/  /* Hide link outs to other sections form the Inline */
+.articleInline .image .enlargeThis /* TODO: Eventually we should use JS up show the better , bigger image */
+{
+	display: none !important; 
+}
+
+/* Make Inline Narrow */
+
+.articleInline,
+.articleInline > div,
+.articleInline div.image  {
+	width:    150px   !important;
+	overflow: hidden  !important;
+}
+
+.articleInline div.image img {
+	width: 100%       !important;
+	height: auto      !important;
+}
+
+.articleInline h2,
+.articleInline h3 {
+	font-size: 14px !important;
+}
+
+.articleInline li,
+.articleInline a {
+	font-size: 13px !important;
+}
+
+
+/*  Business */
+
+.subNavigation #searchWidget .inlineSearchControl .text {
+	width: 250px !important;
+}
+
+
+/*	Health  - C Column */
+
+#main .cColumn .columnGroup div.relatedStories.well {
+	padding-bottom: 25px !important;
+}
+
+#main .cColumn #health_fit_tools,        /* Health - Health Tools */
+#main .cColumn table.expediaBooking      /* Travel - Expedia Module */
+{
+	display: none !important; 
+}
+
+/* Ad exceptions on HP and Article */
+
+#HPMiddle,
+div.bigAd:first-child {
+	display: block !important;
+	opacity: 0.3        !important;
+	-webkit-transition: opacity 500ms linear;
+}
+
+#HPMiddle:hover,
+div.bigAd:first-child:hover {
+	opacity: 1          !important;;
+}
+
+/* Ad Experiment - MiddleRight */
+
+#MiddleRight {
+	display: none       !important;
+}
+
+.isReady #MiddleRight {
+	display: block      !important;
+	opacity: 0.3        !important;
+	-webkit-transition: opacity 500ms linear;
+}
+
+.isReady #MiddleRight:hover {
+	opacity: 1          !important;;
+}
+
+#MiddleRight {
+	border-top: 0       !important;
+	padding: 0 0 10px 0 !important;
+	margin-top: -12px   !important;
+}
+
+
+#MiddleRight a > img {
+	width: 344px !important;
+	height: auto !important;
+}
+
+#MiddleRight embed {
+	width: 344px !important;
+}
+
+
+

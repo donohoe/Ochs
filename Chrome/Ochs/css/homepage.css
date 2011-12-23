@@ -1,0 +1,555 @@
+/* START Fonts & Tyekit Fonts */
+
+.columnGroup h1,
+.story h1,
+.story h2,
+.story h3,
+.story h4,
+.story h5,
+#date p,
+#facebookContainer div.activity p
+{
+	font-family: 'nyt-cheltenham-hinted-1','georgia',serif !important;
+	font-weight: normal !important;
+	opacity:     0;
+}
+
+.isReady .columnGroup h1,
+.isReady .story h1,
+.isReady .story h2,
+.isReady .story h3,
+.isReady .story h4,
+.isReady .story h5,
+.isReady #date p,
+.isReady #facebookContainer div.activity p
+{
+	visibility: visible !important;
+	opacity:    1       !important;
+}
+
+#main {
+	border-top: 0     !important;
+	margin-left: -8px !important;
+}
+
+#main .columnGroup:first-child h1,
+#main .columnGroup:first-child h2 {
+	font-size:   30px !important;
+	line-height: 33px !important;
+	display:     block;
+	color:       black !important;
+}
+
+#main .story h2,
+#main .story h3 {
+	font-size: 18px;
+	line-height: 21px;
+}
+
+#main .story h5,
+h6.headline
+{
+	font-size: 15px !important;
+}
+
+
+/* END Fonts */
+
+/* Breaking News ALert Bar */
+
+.alertsContainer {
+	margin-left: 10px;
+	margin-right: -9px;
+	padding: 0 9px 0 0 !important;
+}
+
+.breakingNewsAlert tr td {
+	padding-top:    11px !important;
+	padding-bottom: 10px !important;
+}
+
+/* End Breaking News */
+
+.kicker, .moduleHeader, .moduleHeaderBd {
+	padding-bottom: 7px !important;
+}
+
+/* START Masthead & Toolbar */
+
+#shell #page #masthead  {
+  height: 64px !important; /* Homepage */
+}
+
+#toolbar {
+	border-bottom: 1px solid lightgray !important;
+	padding-left: 0                    !important;
+}
+
+#toolbar .socialMediaModule {
+	margin-top: 9px !important;
+}
+
+	/* Autosuggest */
+
+	#toolbarSearch {
+		margin-left: -4px !important;
+	}
+
+	#toolbarAutosuggestions {
+		background: white;
+		border: 1px solid #ccc !important;
+	}
+
+/* END Masthead & Toolbar */
+
+/* START Timescast */
+
+#photoSpotRegion {
+	background-color: white !important;
+}
+
+/* END Timescast */
+
+.story .timestamp {
+	margin-left: 3px;
+}
+
+/* BEGIN Interactive Custum Insert Fix */
+
+#home .wideB .bColumn .columnGroup .column.adjusted:first-child {
+	width: 156px !important;
+}
+
+#home .wideB .bColumn .columnGroup .subColumn-2 { 
+	margin-left: -5px; margin-right: -5px; 
+}
+
+#home .wideB .bColumn .columnGroup.flushBottom { 
+	margin-left: 0px !important; 
+}
+
+#home .bColumn .subColumn-2.wrap.noBackground.layout .column  {
+	width: 169px !important;
+}
+
+/* 911 coverage */
+
+#home .bColumn .subColumn-2.wrap.noBackground.layout .column,
+#home .wideB .bColumn .columnGroup .column.adjusted:first-child {
+	width: 100% !important;
+}
+/* END 911 coverage */
+
+/* END */
+
+/* Remove Left Nav Bar */
+
+#home .baseLayout,
+#home .baseLayoutBelowFold {
+  background: none !important;
+  width: 977px     !important;
+}
+
+#home .baseLayout .nav, 
+#home .baseLayoutBelowFold .nav {
+  display: none !important;
+  width: 970px !important;
+}
+
+
+/* More Whitespace in Columns */
+
+#home .aColumn div.columnGroup {
+	margin-right: 12px !important;
+}
+
+#home .bColumn div.columnGroup {
+	margin-left: 10px !important;
+}
+
+#home .cColumn div.columnGroup {
+	margin-left: 14px !important;
+	margin-right: 0px !important;
+}
+
+#home .cColumn div.insetH, 
+#home .cColumn .subColumn-2 div.last div.insetH, 
+#home .cColumn .subColumn-2 .lastColumn div.insetH, 
+#home .cColumn .subColumn-2 div.last div.columnGroup, 
+#home .cColumn .subColumn-2 .lastColumn div.columnGroup {
+	margin-left: 14px;
+}
+
+#home .spanAB {
+	background: url(http://www.nytimes.com/images/layout/vertical_rule.gif) repeat-y 623px 50% !important;
+}
+
+/* Adjust A Column on Homepage */
+
+div.abColumn div.aColumn div.columnGroup div.story > a > img {
+  width: 250px !important;
+  height: 140px !important;
+}
+
+/* Convert Narrow Columns to full width on Homepage C Column */
+
+#cColumnAboveMothRegion .subColumn-2 .column {
+	width: 100% !important;
+}
+
+#cColumnAboveMothRegion .singleRuleDivider.insetH {
+	margin-left: 14px !important;
+	margin-right: 0 !important;
+}
+
+#cColumnAboveMothRegion .subColumn-2 .column .story h5 {
+	width: 270px;
+}
+
+#cColumnAboveMothRegion .subColumn-2 .column .story .runaroundRight {
+	margin: -18px 6px 6px 6px !important;
+}
+
+/* Hide Video and Other Area above the MOTH */
+
+div.baseLayout div.column div.abColumn > div.wideA.layout {
+  display: none! important;
+}
+
+
+/* Homepage - Move lower C Column upwards Above The Fold */
+
+#page div.baseLayoutBelowFold div.cColumn {
+  position: absolute;
+  top:         860px;
+  margin-left: 621px;
+}
+
+#page div.baseLayoutBelowFold div.cColumn #blogModule {
+  margin-top: 536px;
+  display: none !important;
+}
+
+#page div.baseLayoutBelowFold div.cColumn .timeswireModule .sectionHeaderHome {
+  border-top: 1px solid #CCC !important;
+  padding-top: 8px !important;
+}
+
+/* Hide HP C Column */
+
+div.baseLayoutBelowFold div.spanABBelowFold div.cColumn {
+  display: none;
+}
+
+
+/* Video Player - Homepage */
+
+.videoplayerContainer .box {
+  border: 1px solid white !important;
+}
+
+/* WSOD markets Module */
+
+#wsodMarkets {
+  width: 335px;
+}
+
+#wsodMarkets > div:last-child {
+  display: none !important;
+}
+
+#wsod-home {
+  width: 100% !important;
+}
+
+#wsod-home div.marketContainer {
+  width: 96px !important;
+}
+
+#wsod-home div.mMarket {
+  padding: 0 12px !important;
+  margin-left: 12px !important;
+}
+
+#wsodFormHome {
+    display: none !important;
+}
+
+
+/* Bring Width back into alignments */
+
+#home .abcColumn {
+  width: 970px !important;
+}
+
+#home .wideB .aColumn {
+  width: 270px !important;
+}
+
+#home .wideB {
+  background: url(http://www.nytimes.com/images/layout/vertical_rule.gif) repeat-y 264px !important;
+}
+
+#home .noBackground {
+  background: none !important;
+}
+
+#home .spanAB, #home .spanABBelowFold {
+  width: 970px !important;
+}
+
+#home .spanAB > .abColumn {
+  width: 618px !important;
+}
+
+#home .wideA .bColumn, #home .wideB .aColumn {
+  width: 265px !important;
+}
+
+/* Slides Pagination on HP */
+
+div.nytmm_numberCounter ul li {
+  font-size: 12px !important;
+}
+
+/* Facebook Module */
+
+#cColumnTopSpanRegion #facebookContainer {
+  margin-top: -27px !important;
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+  border-top: 0 !important;
+}
+
+#fbInfo,
+#facebookContainer h4.sectionHeaderHome img {
+  display:none !important; 
+}
+
+/* Facebook Module on On Articles */
+
+div.cColumn > #facebookContainer {
+  margin-top: 8px !important;
+}
+
+#facebookContainer .actor, 
+#facebookContainer p,
+#facebookContainer p a {
+  font-size: 13px !important;
+  font-family: georgia,"times new roman",times,serif;
+}
+
+#facebookContainer p {
+	line-height: 15px !important;
+}
+
+/* C Colum - expand column width for single item */
+
+div.cColumn > div.first div.fullWidth div.subColumn-2 > div.column {
+	width: 100% !important;
+}
+
+/* Below the fold */
+
+#home .spanABWell .spanABBelowFold {
+	background: url(http://www.nytimes.com/images/layout/vertical_rule.gif) repeat-y 651px 50% !important;
+}
+
+.baseLayoutBelowFold .spanABBelowFold > .abColumn {
+  width: 100% !important;
+}
+
+.baseLayoutBelowFold .abColumn #wellRegion,
+.baseLayoutBelowFold .abColumn #wellRegion .subColumn-3 {
+  width: 100% !important;
+  background: none !important;
+}
+
+.spanABWell #wellRegion .module {
+	width: 100% !important;
+	background: url(http://www.nytimes.com/images/layout/vertical_rule.gif) repeat-y 316px 50% !important;
+	padding: 0 !important;
+	margin: 10px !important;
+}
+
+.baseLayoutBelowFold .abColumn #wellRegion .module .column {
+  width: 310px !important;
+  margin-top: 10px;
+}
+
+.baseLayoutBelowFold .abColumn #wellRegion .column .columnGroup {
+  height: 130px !important;
+}
+
+.spanABWell #wellRegion .thumb {
+	width: 75px !important;
+}
+
+.spanABWell #wellRegion .headlinesOnly img {
+	width: auto !important;
+	height: auto !important;
+}
+
+
+/*.spanABWell #wellRegion .module {
+background: url(http://www.nytimes.com/images/layout/hpWellRulers.gif) no-repeat 316px top !important;
+width: 970px !important;
+margin: 5px !important;
+padding: 0 !important;
+}
+*/
+#home .abColumn .subColumn-3 {
+  width: 100% !important;
+}
+
+#wellRegion .column div.columnGroup {
+  border-top:  1px solid #CCC !important;
+  padding-top: 12px    !important;
+  height:      166px   !important;
+}
+
+#wellRegion .column div.columnGroup ul li {
+	max-height: 33px   !important;
+	overflow: hidden   !important;
+	margin-bottom: 6px !important;
+}
+
+#wellRegion .column div.columnGroup ul li h6 {
+	font-size: 14px    !important;
+}
+
+#wellRegion .subColumn-3 .column div.columnGroup:first-child {
+  border-top:  0   !important;
+  padding-top: 4px !important;
+}
+
+
+/* Ad exceptions on HP and Article */
+
+#HPMiddle,
+div.bigAd:first-child {
+	display: block !important;
+}
+
+/* Custom & Dynamic Content */
+
+/* Navigation - Configuration */
+
+#navConfigSection {
+	display: block;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-family: arial, helvetica, sans-serif;
+	overflow: hidden;
+	border-top: 1px solid lightGrey;
+}
+
+#navConfigSection li {
+	height: 18px;
+	padding: 6px 7px 0 7px;
+	margin: 0;
+	font-family: georgia, "times new roman", times, serif;
+	font-size: 1.1em;
+	border: 1px solid #CCC;
+	border-width: 0 1px 0 0;
+	border-color: lightGrey;
+	background: white;
+	background-image: none;
+	white-space: nowrap;
+	float: left;
+}
+
+#navConfigSection li:first-child {
+	border-left-width: 1px;
+}
+
+div.addSection {
+	cursor: pointer;
+	padding: 3px 0 1px 20px;
+	background: transparent url(/images/apps/mytimes/add_page.gif) no-repeat left center;
+}
+
+#navConfigSection label {
+	float:     left;
+	min-width: 116px;
+	margin:    0 10px 2px 8px;
+}
+
+/* Ads */
+
+/* Custum Ads */
+
+#HPMiddle,
+div.bigAd:first-child {
+	display: block !important;
+	opacity: 0.3        !important;
+	-webkit-transition: opacity 500ms linear;
+}
+
+#HPMiddle:hover,
+div.bigAd:first-child:hover {
+	opacity: 1          !important;
+}
+
+#HPMiddle img[width="302"],
+#HPMiddle img[width="302px"] {
+	width: 100%   !important;
+	height: auto  !important;
+}
+
+
+
+#customBox1 {
+	width:  295px;
+	height: 278px !important;
+	overflow: hidden;
+	margin: 0 0 10px 0;
+	border: 1px solid black;
+	padding: 10px;
+
+	opacity: 0.3        !important;
+	-webkit-transition: opacity 500ms linear;
+}
+
+#customBox1:hover {
+	opacity: 1          !important;
+}
+
+#customBox1 h1,
+#customBox1 h2 {
+	white-space:   nowrap   !important;
+	text-overflow: ellipsis !important;
+	overflow:      hidden;
+	font-size:     15px     !important;
+}
+
+#customBox1 div {
+	width: 280px !important;
+}
+
+#customBox1 > a > img {
+	width: 295px !important;
+	height: auto !important;
+}
+
+#wellRegion .column #customBox1 + div.columnGroup {
+	border-top: 1px solid white !important;
+}
+
+#customBox1 embed {
+	overflow: hidden !important;
+	width: 297px !important;
+	height: 248px !important;
+	padding-top: 15px;
+}
+
+/* Steve Jobs */
+
+#stevejobs {
+	display: none;
+}
+
+
+

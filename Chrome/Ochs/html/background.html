@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+
+chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
+
+	switch (request.task){
+		case "settings": 
+			sendResponse({ "settings" : localStorage });
+			break;
+
+		case "navigation": 
+
+			if (request.action=="save") {
+				localStorage["navigaion_list"] = request.action || "";
+				sendResponse({ "navigation" : "saved" });
+			} else {
+				var navList = localStorage["navigaion_list"] || "";
+				sendResponse({ "navigation" : navList });
+			} 
+
+			break;
+
+		default:
+			sendResponse({});
+	}
+
+});
+
+</script>
+</head>
+<body>
+	<!-- hello -->
+</body>
+</html>

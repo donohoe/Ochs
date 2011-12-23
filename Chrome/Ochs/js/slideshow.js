@@ -1,0 +1,1 @@
+Ochs.pageType = "slideshow";

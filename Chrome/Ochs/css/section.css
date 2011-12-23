@@ -1,0 +1,100 @@
+
+
+/* START Masthead */
+
+#masthead {
+	margin:  0 !important;
+	padding: 7px 7px 0 !important;
+}
+
+/* END Masthead */
+
+/* Opinion Blog Module */
+
+#spanABCRegion .blogModule h2 {
+  margin-top: 12px !important;
+}
+
+/* Subscribe MOdule */
+
+div.cColumn div.subscribeModule {
+	display: none !important;
+}
+
+/* Business Day Sectionfront */
+
+#branding {
+  margin: 4px 0 0 0 !important;
+  float: left       !important;
+  padding-top: 0    !important;
+}
+
+.subNavigation .horizontalMenu li {
+  padding: 0 6px !important;
+}
+
+/* T Mag Exception */
+
+#masthead .insetV h2 {
+  margin-left: -135px !important;
+}
+
+/* Opinion exception */
+
+#masthead h2 a img {
+  margin-left: 0;
+}
+
+#searchWidget {
+  margin: 0 7px 0 0 !important;
+}
+
+#searchWidget .inlineSearchControl label {
+  visibility: visible !important;
+}
+
+#masthead h2.pageHeaderWithLabel span { /* Technology SF */
+  display: none!important;
+}
+
+#main .cColumn {
+	background: none !important;
+	background-color: white !important;
+}
+
+#mostPopWidget {
+	border-top: 0 !important;
+}
+
+#mostPopWidget #mostPopTabRecommendations {
+	background-color: white !important;
+	
+}
+
+/* TRAVEL SF */
+
+.expediaBooking,
+#SpanBCTopRegion > .columnGroup.first,
+#SpanBCTopRegion #expediaSFModule {
+  display: none !important;
+}
+
+#freeForm3,                    /* Science C Col Module */
+#cnetMostPopWidget,            /* Technology - CNET */
+#wsodMarketsNavigation {       /* Business - Financial Tools */
+	display: none !important;
+}
+
+
+/* Twitter Module on SF's */
+
+.cColumn .twitterModule {
+	border: 0 !important;
+}
+
+/* Room for Debate */
+
+#middle .contentNavigation h2 {
+	font-size: 13px !important;
+}
+
